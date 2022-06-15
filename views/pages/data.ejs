@@ -1,0 +1,17 @@
+<%- include("../partials/head"); %>
+<div class="container">
+    <h1>Data</h1>
+    <div class="row">
+        <div class="col">
+           <h2>Student ID:<%= student.id %></h2>
+           <h2>Student Name:<%= student.name %></h2>
+           <h2>Student Major:<%= student.major %></h2>
+           <ul>
+                <% for (var i=0;i < student.hobbies.length; i++){ %>
+                    <li><%= student.hobbies[i] %></li>
+                <% } %>
+           </ul>
+        </div>
+    </div>
+</div>
+<%- include("../partials/footer"); %>
